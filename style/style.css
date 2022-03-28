@@ -1,6 +1,9 @@
 /* Primary Colors */
+/* Background, Headings, Buttons color */
+/* Paragraphs color */
 body {
   background-color: #f2f2f2;
+  font-size: 15px;
 }
 
 .container {
@@ -10,10 +13,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -28,6 +27,7 @@ body {
 }
 
 .box-sedans {
+  border-radius: 10px 0 0 10px;
   background-color: #e38826;
 }
 
@@ -36,6 +36,27 @@ body {
 }
 
 .box-luxury {
+  border-radius: 0px 10px 10px 0px;
   background-color: #004241;
+}
+
+.car-icon {
+  padding: 15% 15% 10%;
+}
+
+.category-name {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 40px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  padding-left: 15%;
+}
+
+.category-desc {
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: start;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 10% 15% 10%;
 }
 /*# sourceMappingURL=style.css.map */

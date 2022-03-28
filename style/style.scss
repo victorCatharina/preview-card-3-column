@@ -3,9 +3,15 @@ $boxSedansColor: hsl(31, 77%, 52%);
 $boxSuvsColor: hsl(184, 100%, 22%);
 $boxLuxuryColor: hsl(179, 100%, 13%);
 
+/* Background, Headings, Buttons color */
+$SecondColor: hsl(0, 0%, 95%);
+
+/* Paragraphs color */
+$ParagraphColor: hsla(0, 0%, 100%, 0.75);
 
 body{
-    background-color: hsl(0, 0%, 95%);
+    background-color: $SecondColor;
+    font-size: 15px;
 }
 
 .container{
@@ -13,7 +19,6 @@ body{
     height: 90vh;
     margin: 3% 0 0 0;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -24,11 +29,34 @@ body{
 }
 
 .box-sedans{
+    border-radius: 10px 0 0 10px;
     background-color: $boxSedansColor;  
 }
 .box-suvs{
     background-color: $boxSuvsColor;
 }
 .box-luxury{
+    border-radius: 0px 10px 10px 0px;
     background-color: $boxLuxuryColor;
+}
+
+.car-icon{
+    padding: 15% 15% 10%;
+}
+
+.category-name{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    color: $SecondColor;
+    text-transform: uppercase;
+    padding-left: 15%;
+}
+
+.category-desc{
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: start;
+    line-height: 1.8;
+    color: $ParagraphColor;
+    padding: 10% 15% 10%;
+
 }
