@@ -1,7 +1,7 @@
 /* Primary Colors */
-$boxSedansColor: hsl(31, 77%, 52%);
-$boxSuvsColor: hsl(184, 100%, 22%);
-$boxLuxuryColor: hsl(179, 100%, 13%);
+$SedansColor: hsl(31, 77%, 52%);
+$SuvsColor: hsl(184, 100%, 22%);
+$LuxuryColor: hsl(179, 100%, 13%);
 
 /* Background, Headings, Buttons color */
 $SecondColor: hsl(0, 0%, 95%);
@@ -9,12 +9,12 @@ $SecondColor: hsl(0, 0%, 95%);
 /* Paragraphs color */
 $ParagraphColor: hsla(0, 0%, 100%, 0.75);
 
-body{
+body {
     background-color: $SecondColor;
     font-size: 15px;
 }
 
-.container{
+.container {
     width: 100vw;
     height: 90vh;
     margin: 3% 0 0 0;
@@ -23,28 +23,30 @@ body{
     align-items: center;
 }
 
-.box{
+.box {
     width: 20%;
-    height: 70%;
+    height: 75%;
 }
 
-.box-sedans{
+.box-sedans {
     border-radius: 10px 0 0 10px;
-    background-color: $boxSedansColor;  
-}
-.box-suvs{
-    background-color: $boxSuvsColor;
-}
-.box-luxury{
-    border-radius: 0px 10px 10px 0px;
-    background-color: $boxLuxuryColor;
+    background-color: $SedansColor;
 }
 
-.car-icon{
+.box-suvs {
+    background-color: $SuvsColor;
+}
+
+.box-luxury {
+    border-radius: 0px 10px 10px 0px;
+    background-color: $LuxuryColor;
+}
+
+.car-icon {
     padding: 15% 15% 10%;
 }
 
-.category-name{
+.category-name {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 40px;
     color: $SecondColor;
@@ -52,11 +54,100 @@ body{
     padding-left: 15%;
 }
 
-.category-desc{
+.category-desc {
     font-family: 'Lexend Deca', sans-serif;
-    text-align: start;
     line-height: 1.8;
     color: $ParagraphColor;
     padding: 10% 15% 10%;
+    margin-right: 15px;
+}
+
+.button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 135px;
+    height: 42px;
+    border: none;
+    border-radius: 30px;
+    margin: 15% 15% 10%;
+}
+
+.button:hover {
+    color: $ParagraphColor;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.learn-more-sedans {
+    color: $SedansColor;
+}
+
+
+.learn-more-suvs {
+    color: $SuvsColor;
+}
+
+.learn-more-luxury {
+    color: $LuxuryColor;
+}
+
+@media (max-width: 1050px) {
+
+    .container {
+        width: 100vw;
+        height: 200%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 25%;
+        height: 75%;
+    }
+
+    .box-sedans {
+        border-radius: 10px 10px 0 0;
+        background-color: $SedansColor;
+    }
+
+    .box-suvs {
+        background-color: $SuvsColor;
+    }
+
+    .box-luxury {
+        border-radius: 0 0 10px 10px;
+        background-color: $LuxuryColor;
+    }
+
+    .car-icon {
+        padding: 15% 15% 10%;
+    }
+
+    .category-name {
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 40px;
+        color: $SecondColor;
+        text-transform: uppercase;
+        padding-left: 15%;
+    }
+
+    .category-desc {
+        font-family: 'Lexend Deca', sans-serif;
+        line-height: 1.8;
+        color: $ParagraphColor;
+        padding: 10% 15% 10%;
+        margin-right: 15px;
+    }
+
+    .button {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        width: 135px;
+        height: 42px;
+        border: none;
+        border-radius: 30px;
+        margin: 15% 15% 10%;
+    }
 
 }
